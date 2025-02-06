@@ -115,4 +115,6 @@ public class Main {
         if (isPrime)
             System.out.println(a + " is a prime number");
     }
+
+    //8
 }
