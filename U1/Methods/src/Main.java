@@ -8,10 +8,15 @@ public class Main {
         System.out.println();
 
         //3
+
         createBox(5, 3, '$');
 
         //4
+
+        double baseLoadTime = System.currentTimeMillis();
         createHollowBox(5, 4, '*');
+        double currentLoadTime = (System.currentTimeMillis() - baseLoadTime)/1000.0;
+        System.out.println("Load Time: " + currentLoadTime + "s");
 
         //5
         createHouse();
@@ -125,13 +130,8 @@ public class Main {
     private static void createHollowBox(int width, int height, char symbol) {
         createBar(width, symbol);
         System.out.println();
-        for (int i = 0; i < height-2; i++) {
-            System.out.print(symbol);
-            for (int j = 0; j < width-2; j++) {
-                System.out.print(" ");
-            }
-            System.out.println(symbol);
-        }
+        for (int i = 0; i < height-2; i++)
+            System.out.println(symbol + " ".repeat(width-2) + symbol);
         createBar(width, symbol);
     }
 
