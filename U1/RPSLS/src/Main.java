@@ -66,6 +66,7 @@ public class Main {
             if (!keepGoing()) {
                 System.out.println("Thanks for playing. Here is your final record: ");
                 printRecord(gamesPlayed, wins, losses, ties);
+                scanner.close();
                 break;
             }
         }
@@ -167,7 +168,7 @@ public class Main {
         String response;
         while (true) {
             System.out.print("Would you like to play again? [Y]es or [N]o: ");
-            response = scanner.nextLine();
+            response = scanner.nextLine().trim();
 
             if (!response.equalsIgnoreCase("Y") && !response.equalsIgnoreCase("N"))
                 System.out.println("Invalid response. Please try again.");
