@@ -1,4 +1,7 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -9,9 +12,6 @@ public class Main {
         ArrayList<String> nouns = new ArrayList<>();
         ArrayList<String> verbs = new ArrayList<>();
 
-        File nounFile = new File("src/nouns.txt");
-        File verbFile = new File("src/verbs.txt");
-
         FileReader nounReader;
         FileReader verbReader;
 
@@ -19,8 +19,8 @@ public class Main {
         BufferedReader verbBuffer;
 
         try {
-            nounReader = new FileReader(nounFile);
-            verbReader = new FileReader(verbFile);
+            nounReader = new FileReader("src/nouns.txt");
+            verbReader = new FileReader("src/verbs.txt");
 
             nounBuffer = new BufferedReader(nounReader);
             verbBuffer = new BufferedReader(verbReader);
