@@ -1,0 +1,5 @@
+James  88  A
+Mira  91  A+
+Lois  52  D
+Grant  31  F
+Guillermo  75  B
