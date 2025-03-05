@@ -75,6 +75,5 @@ public class Main {
         nickel.flip();
         if (nickel.getFaceUp() == 0) System.out.println("Heads up!");
         else System.out.println("Tails up!");
-
     }
 }
