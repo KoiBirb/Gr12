@@ -26,6 +26,8 @@ public class timer extends JPanel implements ActionListener {
         keyListener = new KeyHandler();
 
         this.addKeyListener(keyListener);
+        this.setFocusable(true);
+        this.requestFocusInWindow();
     }
 
     private void update() {
