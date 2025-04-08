@@ -56,23 +56,23 @@ public class Main {
 
         // 10
 
-//        Stack<Integer> ints = new Stack<>();
-//        Scanner scanner = new Scanner(System.in);
-//
-//        int input;
-//
-//        do {
-//            System.out.print("Enter a number (999 to quit): ");
-//            input = scanner.nextInt();
-//            ints.push(input);
-//        } while (input != 999);
-//
-//        System.out.println("You entered: ");
-//
-//        while (!ints.isEmpty()) {
-//            ints.pop();
-//            System.out.println(ints.pop());
-//        }
+        Stack<Integer> ints = new Stack<>();
+        Scanner scanner = new Scanner(System.in);
+
+        int input;
+
+        do {
+            System.out.print("Enter a number (999 to quit): ");
+            input = scanner.nextInt();
+            ints.push(input);
+        } while (input != 999);
+
+        System.out.println("You entered: ");
+
+        while (!ints.isEmpty()) {
+            ints.pop();
+            System.out.println(ints.pop());
+        }
 
         // 11
 
